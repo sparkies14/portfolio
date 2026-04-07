@@ -11,15 +11,15 @@
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #F9F8F6;
-    --bg2: #F2F0EC;
-    --ink: #1A1916;
-    --ink2: #6B6860;
-    --ink3: #A8A59F;
-    --accent: #2C5F8A;
-    --border: #E4E1DB;
-    --green: #2D7A4F;
-  }
+  --bg: #F4F3F1;        /* slightly darker, less bright */
+  --bg2: #EDEBE7;       /* softer secondary */
+  --ink: #141413;       /* deeper black */
+  --ink2: #5C5953;      /* better readability */
+  --ink3: #9C988F;
+  --accent: #3A5A7A;    /* toned-down blue */
+  --border: #DDDAD4;    /* softer borders */
+  --green: #2F6F4E;
+}
 
   html { scroll-behavior: smooth; }
 
@@ -196,6 +196,7 @@
 
   /* STATS */
   .stats {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
@@ -224,6 +225,7 @@
   .pillars { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
 
   .pillar {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
     padding: 1.4rem;
     background: var(--bg2);
     border-radius: 10px;
@@ -298,6 +300,7 @@
   .industry:hover { background: var(--bg2); }
 
   .industry-name {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.02);
     font-size: 0.88rem;
     font-weight: 500;
     color: var(--ink);
